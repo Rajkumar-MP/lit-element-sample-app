@@ -1,0 +1,33 @@
+{
+  "name": "lit Sample App",
+  "version": "1.0.0",
+  "description": "Learning Curve of Lit Element",
+  "scripts": {
+    "start": "polymer serve",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -s storybook-static",
+    "test": "karma start",
+    "test:watch": "karma start --auto-watch=true --single-run=false",
+    "lint:eslint": "eslint --ext .js,.html .",
+    "format:eslint": "eslint --ext .js,.html . --fix",
+    "build": "webpack"
+  },
+  "author": "RJ",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.2.0",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "lit-element": "^2.0.1",
+    "pwa-helpers": "^0.9.1",
+    "redux": "^4.0.1",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/demoing-storybook": "^0.1.3",
+    "@open-wc/eslint-config": "^0.4.1",
+    "@open-wc/testing": "^0.9.27",
+    "@open-wc/testing-karma": "^0.4.14",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
